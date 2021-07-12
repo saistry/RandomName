@@ -16,7 +16,8 @@
             <h2>Random Name:</h2>
             <h1 id="randResult">&lt;&lt;NAME&gt;&gt;</h1>
             <button id="generate">Generate Name</button>
-            var name;
+            <script>
+                var name;
 var users = [];
 
 while (true) {
@@ -30,6 +31,7 @@ var numUsers = users.length - 1;
 var winner = Math.floor(Math.random() * numUsers + 1);
 
 document.write("The winner is..." + users[winner]);
+            </script>
         </main>
         <footer>
             Last updated: <script>document.write(document.lastModified);</script>
